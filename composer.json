@@ -1,0 +1,7 @@
+{
+  "require": {
+    "swiftmailer/swiftmailer": "@stable",
+    "google/recaptcha": "~1.1",
+    "scrivo/highlight.php": "@stable"
+  }
+}

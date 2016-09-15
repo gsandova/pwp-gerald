@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^gsandoval.net$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.gsandoval.net$
+RewriteCond %{REQUEST_URI} !public_html/
+RewriteRule (.*) /public_html/$1 [L]
+
+# for A Small Orange deployments only
+# delete this if deploying to any other host
+AddHandler application/x-httpd-php70 .php .php5 .php4 .php3
