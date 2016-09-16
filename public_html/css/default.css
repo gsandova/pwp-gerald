@@ -1,0 +1,100 @@
+/*
+
+Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+*/
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: rgba(0,0,0,0.9);
+}
+
+
+
+
+.hljs-attribute,
+
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
+	font-weight: bold;
+	color white;
+}
+.hljs-params,
+.hljs-class
+.hljs-title {
+	color: #f8f8f2;
+}
+
+.hljs-tag,
+.hljs-subst {
+	color: #f8f8f2;
+}
+
+
+
+
+.hljs-built_in,
+.hljs-literal,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+	color: #01FFFF;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+	color: red;
+}
+
+.hljs-type,
+.hljs-string,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-template-tag,
+.hljs-deletion {
+	color: #b854d4;
+}
+
+.hljs-number {
+	color yellow;
+}
+
+.hljs-title,
+.hljs-section {
+	color: #b854d4;
+	font-weight: bold;
+}
+
+.hljs-comment,
+.hljs-quote {
+	color: #01FF00;
+	font-style: italic;
+}
+
+.hljs-meta {
+	color: #2B6EA1;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+	color: #f92672;
+	font-weight: bold;
+}
+

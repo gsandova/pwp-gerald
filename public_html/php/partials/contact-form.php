@@ -1,9 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-md-6 col-md-offset-3">
-			<!--
-			<form id="contact-form" action="../php/mailer.php" method="post" novalidate>
-			-->
+
 
 
 			<form class="form-horizontal well" id="contact-form" action="../php/mailer.php" method="post" novalidate>

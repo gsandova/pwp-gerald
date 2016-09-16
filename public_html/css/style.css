@@ -181,3 +181,16 @@ footer {
 	*/
 	color: deepskyblue;
 }
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: rgba(0,0,0,0.5);
+}
+
+.hljs-comment,
+.hljs-quote {
+	color: Chartreuse ;
+	font-style: italic;
+}

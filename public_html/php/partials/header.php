@@ -35,7 +35,7 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 					<li><a href="<?php echo $PREFIX;?>">Home</a></li>
 					<li><a href="<?php echo $PREFIX;?>resume/">Resume</a></li>
 
-					<!-- Under Construction  <li><a href="<?php echo $PREFIX;?>portfolio/">Portfolio</a></li>   -->
+					<li><a href="<?php echo $PREFIX;?>portfolio/">Portfolio</a></li>
 
 					<li><a href="<?php echo $PREFIX;?>contact/">Contact</a></li>
 					<li class="dropdown">
