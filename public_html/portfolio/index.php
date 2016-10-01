@@ -1,22 +1,13 @@
 <?php
 /*grab current directory*/
 $CURRENT_DIR = __DIR__;
-
 /*load head-utils.php*/
 //require_once("../php/partials/head-utils.php");
-
 // Initialize your autoloader (this example is using composer)
 require '../../vendor/autoload.php';
-// Instantiate the Highlighter.
-$hl = new Highlight\Highlighter();
-// Highlight some code.
-$r = $hl->highlight("cpp", file_get_contents("../documentation/binary.cpp"));
-$s = $hl->highlight("cpp", file_get_contents("../documentation/binary.h"));
-$t = $hl->highlight("cpp", file_get_contents("../documentation/output.txt"));
 
 /*load head-utils.php*/
 require_once("../php/partials/head-utils.php");
-
 ?>
 <!--
 <head>
@@ -51,7 +42,12 @@ require_once("../php/partials/head-utils.php");
 
 			<div class="well">
 				<h2 align="center">Programming Challenge:  </h2>
-				<p>This is a programming challenge that I accepted.  I did not receive any compensation for this work nor was I asked to sign any kind of confidentiality agreement.  It utilizes C++ libraries.  You're welcome to download the 'tar' file, if you wish to run it yourself.</p>
+				<p>This is a programming challenge that I accepted. I did not receive any compensation for this work nor was I asked to sign any kind of confidentiality agreement. I wrote it in 4 different programming languages.  All of which accomplish the same exact goal.				<ul>
+					<li><a href="C.php"><b>ANSI C</b></a></li>
+					<li><a href="CPP11.php"><b>C++ 11</b></a></li>
+					<li><a href="Java.php"><b>Java</b></a></li>
+					<li><a href="Python.php"><b>Python</b></a></li>
+				</ul>  All 4 programs were written in a Linux environment.  You're welcome to download the <a href="../documentation/tar_file_coming_soon.txt" download><b>'tar' file</b></a>, if you wish to run them yourself.</p>
 
 			</div> <!-- class"well" -->
 
@@ -64,7 +60,7 @@ require_once("../php/partials/head-utils.php");
 					-----------<br>
 					<br>
 					The binary file "00_LHZ.512.seed" has the following structure:<br>
-<br>
+					<br>
 					* Every 512 bytes represents a record<br>
 					* Inside of each record, in the following order, there is:<br>
 					- One header (48 bytes)<br>
@@ -110,24 +106,7 @@ require_once("../php/partials/head-utils.php");
 			</div> <!-- class"well" -->
 
 
-			<div class="row">
-				<div class="col-xs-12 col-md-8 col-md-offset-2">
-		<pre class="hljs <?=$r->language?>"><?=$r->value?></pre>
-					</div>
-			</div>
 
-
-			<div class="row">
-				<div class="col-xs-12 col-md-6 col-md-offset-3">
-					<pre class="hljs <?=$s->language?>"><?=$s->value?></pre>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-md-6 col-md-offset-3">
-					<pre class="hljs <?=$t->language?>"><?=$t->value?></pre>
-				</div>
-			</div>
 
 		</div>
 

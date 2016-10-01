@@ -1,52 +1,60 @@
 /**
- *  Gerald Sandoval 
+ *  Gerald Sandoval - gsandoval.net
+ *  Programming Challenge
+ *
+ *  File:  binary.h    C Programming Language (C99)
 
- *  
- *  File:  readFile.h
- *  This is a header file for binary.cpp which include the following:
- *     convertNum() - converts multiple byte data to an integer number
- *         parameters: overloaded operator - byte data
- *         return: converted integer value
- *     data structure - that contains the blockette 310 data.
+ *  This is a header file for binary.c which include the data
+ *  link list that contains the paragraph data. Also are the
+ *  functions to convert Byte data into a decimal number.
  */
-
 #ifndef BINARY_H_H
 #define BINARY_H
 
-//containers
-#include <vector>       // binary file 
-#include <list>         // blockette 310 data
-//input-output
-#include <fstream>      // open file
-#include <iostream>     // std::cout
+#include <stdio.h>
+#include <stdlib.h>
 
-// bit mask
-enum { BIT2 = 4, BIT4 = 16 };
+#define FALSE 0
+#define TRUE 1
+#define BIT2 4
+#define BIT4 16
 
-// overloaded operators to convert hex bytes to an integer number
-unsigned int convertNum(int byte1, int byte0) {
+// An unsigned char can store 1 Bytes (8bits) of data (0-255)
+typedef unsigned char BYTE;
 
-    unsigned int number;
+// convert hex bytes to an integer number
+int hexToDec(BYTE byte1, BYTE byte0) {
+     int msb, lsb, number;
 
-    number = (( byte1 * 256) + byte0 );
-    return number;
+     msb = byte1;
+     lsb = byte0;
+
+     number = (( msb * 256) + lsb );
+     return number;
 }
-unsigned int convertNum(int byte3, int byte2, int byte1, int byte0) {
+int hexToDec4Byte (BYTE byte3, BYTE byte2,
+                   BYTE byte1, BYTE byte0) {
+     int num3, num2, num1, num0;
+     int  number;
 
-    unsigned int  number;
+     num3 = byte3;
+     num2 = byte2;
+     num1 = byte1;
+     num0 = byte0;
 
-    number = (byte3 * 16777216) + (byte2 * 65536) + 
-             (byte1 * 256) + (byte0);
-    return number;
+     number = (num3 * 16777216) + (num2 * 65536) +
+              (num1 * 256) + (num0);
+     return number;
 }
-
-// Structure to contain the 310 data
-struct data {
-    int record = 0;
-    bool automatic;
-    bool p2pAplitude;
-    unsigned int duration;
-    char coupling[13];
-}; 
+// Link List to contain the 310 data
+typedef struct threeTenData data;
+struct threeTenData {
+     int record;
+     int automatic;
+     int p2pAplitude;
+     unsigned int duration;
+     char coupling[13];
+     struct threeTenData *next;
+} ;
 
 #endif

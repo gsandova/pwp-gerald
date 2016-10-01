@@ -1,0 +1,28 @@
+Python Output:
+File size:   254976
+
+Number of Blockettes in the file:  1002
+
+Record:   316
+Calibration Automatic:   True
+peak to peak Amplitude:   True
+Calibration Duration:   24000000
+Calibration Coupling:   resistive
+
+Record:   343
+Calibration Automatic:   True
+peak to peak Amplitude:   True
+Calibration Duration:   24000000
+Calibration Coupling:   resistive
+
+Record:   370
+Calibration Automatic:   True
+peak to peak Amplitude:   True
+Calibration Duration:   6000000
+Calibration Coupling:   resistive
+
+Record:   381
+Calibration Automatic:   True
+peak to peak Amplitude:   True
+Calibration Duration:   6000000
+Calibration Coupling:   resistive
